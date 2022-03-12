@@ -2,6 +2,14 @@
 <head>
   <link rel="stylesheet" href="css/home.css" />
   <nav class="navbar navbar-expand-lg navbar-light fixed-top"></nav>
+  <!-- company name -->
+  <div class="company-details">
+    <!-- <h1>Hi <%= name %></h1> -->
+    <form action="/logout?_method=DELETE" method="POST">
+      <button type="submit" class="btn btn-outline-dark">Log Out <%= name %></button>
+    </form>
+  </div>
+  
 
   <div
     id="carouselExampleIndicators"

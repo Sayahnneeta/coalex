@@ -11,9 +11,9 @@ a {
 }
 
 body {
-  font: normal 18px "Open Sans", sans-serif;
-  background: #fafafa;
-  color: white;
+    font: normal 18px 'Open Sans', sans-serif;
+    background: #fafafa;
+    /* color: white; */
 }
 .header-logo img {
   width: 10%;
@@ -45,12 +45,14 @@ nav {
   flex-wrap: wrap;
 }
 
-nav a {
-  flex-grow: 1;
-  text-align: center;
-  padding: 1em;
-  position: relative;
-}
+        nav a {
+            flex-grow: 1;
+            text-align: center;
+            padding: 1em;
+            position: relative;
+            text-decoration: none;
+            color: black;
+        }
 
 nav a::after {
   content: "";
@@ -64,12 +66,18 @@ nav a::after {
   transition: 0.7s transform cubic-bezier(0.06, 0.9, 0.28, 1);
 }
 
-nav a:hover::after {
-  transform: scaleX(1);
-  text-decoration: none;
-}
-.nav-button button {
-  width: 7%;
-  position: absolute;
-  left: 90%;
-}
+        nav a:hover::after{
+            transform: scaleX(1);
+            text-decoration: none;
+
+        }
+        
+        .nav-button-1 button
+        {
+            position: absolute;
+            left: 87%;
+            top: 15%;
+            text-decoration: none;
+        }
+        
+
