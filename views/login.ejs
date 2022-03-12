@@ -1,9 +1,34 @@
-<head><link rel="stylesheet" href="css/home.css" /></head>
-<h1>Login</h1>
-<% if (messages.error) { %>
-  <%= messages.error %>
-<% } %>
-<form action="/login" method="POST">
+<head>
+     <link rel="stylesheet" href="css/login.css" />
+    
+</head>
+
+
+<div id="main" class="main-container">
+  <img src="img/login-bg.jpg" alt="no image" srcset=""> 
+ <div class="box">
+    <h2>Login</h2>
+      <% if (messages.error) { %>
+      <%= messages.error %>
+      <% } %>
+      <form action="/login" method="POST">
+        <div class="input-box">
+          <label for="email">Email</label>
+          <br>
+          <input type="email" id="email" name="email" placeholder="Enter email" required>
+        </div>
+        <div class="input-box">
+          <label for="password">Password</label>
+          <br>
+          <input type="password" id="password" name="password" placeholder="Enter password" required>
+        </div>
+        <input id="submit" type="submit" name="" value="Login">
+      </form>
+      <p><a href="/register">Register</a></p>
+  </div>
+</div>
+
+<!-- <form action="/login" method="POST">
   <div>
     <label for="email">Email</label>
     <input type="email" id="email" name="email" required>
@@ -15,3 +40,30 @@
   <button type="submit">Login</button>
 </form>
 <a href="/register">Register</a>
+
+
+
+
+
+
+<div id="main" class="main-container">
+  <div class="box">
+    <h2>Login</h2>
+    <form>
+      <div class="input-box">
+        <input id="user-name" type="text" name="" required="">
+        <label>Username</label>
+      </div>
+      <div class="input-box">
+        <input id="user-pass" type="password" name="" required="">
+        <label>Password</label>
+      </div>
+      <input id="submit" type="submit" name="" value="Submit">
+    </form>
+    <p><a href="#">Lost your password?</a></p>
+    <p><a href="#">Register</a></p>
+  </div>
+  </div>
+  
+  <div id="logged-in">
+  </div> -->
