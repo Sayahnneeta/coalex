@@ -13,7 +13,7 @@ a {
 body {
     font: normal 18px 'Open Sans', sans-serif;
     background: #fafafa;
-    color: white;
+    /* color: white; */
 }
 .header-logo img
 {
@@ -51,6 +51,8 @@ header {
             text-align: center;
             padding: 1em;
             position: relative;
+            text-decoration: none;
+            color: black;
         }
 
  
@@ -69,10 +71,15 @@ header {
         nav a:hover::after{
             transform: scaleX(1);
             text-decoration: none;
+
         }
-        .nav-button button
+        
+        .nav-button-1 button
         {
-            width: 7%;
             position: absolute;
-            left: 90%;
+            left: 87%;
+            top: 15%;
+            text-decoration: none;
         }
+        
+
