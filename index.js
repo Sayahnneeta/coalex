@@ -53,6 +53,28 @@ app.get("/", checkAuthenticated,(req, res) => {
     cssFileName: "home",
   });
 });
+app.get("/employersProfile", (req, res) => {
+  res.render("employersProfile", {
+    layout: "./layouts/boilerPlate", // to choose specific layout
+    title: "Employer's Profile | Coalex",
+    cssFileName: "employersProfile",
+  });
+});
+app.get("/riskZone", (req, res) => {
+  res.render("riskZone", {
+    layout: "./layouts/boilerPlate", // to choose specific layout
+    title: "RiskZone | Coalex",
+    cssFileName: "Risk Zone",
+  });
+});
+app.get("/publicApi", (req, res) => {
+  res.render("publicAPI", {
+    layout: "./layouts/boilerPlate", // to choose specific layout
+    title: "Public API | Coalex",
+    cssFileName: "Risk Zone",
+  });
+});
+
 app.get("/about", (req, res) => {
   res.render("about", {
     layout: "./layouts/boilerPlate", // to choose specific layout
@@ -60,7 +82,6 @@ app.get("/about", (req, res) => {
     cssFileName: "about",
   });
 });
-
 
 // Login/register routes
 app.get('/login', checkNotAuthenticated, (req, res) => {
