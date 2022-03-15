@@ -63,21 +63,35 @@
 .team-image h3
 {
     text-align: center;
+    color: black;
+    font-size: 30px;
+    padding-top: 10px;
 }
-.team-image 
-{
- position: relative;
- }
-               
-.team-image img 
+/* .team-image  */
+/* { */
+    /* position: relative; */
+    /* background-color: #171b23; */
+    
+/* } */
+
+/* .team-image img 
 {
     position: relative;
     z-index: 3;
     width: 1071px;
     height: 470px;
     left: 15%;
-}
-            
+} */
+/* .team-img img{
+    border-radius: 50%;
+    width: 250px;
+    height: 250px;
+    margin: 30px;
+    position: relative;
+    left: 22%;
+    margin-bottom: 60px;
+    background-color: #333;
+}            */
 .circles-container 
 {
     position: absolute;
@@ -294,6 +308,90 @@ li
  line-height: 25px;
  padding-left: 5px;
  color: #676a6c;
+}
+.contact .container-fluid {
+    min-height: 500px;
+}
+
+.contact .contact-jumbotron h1 {
+    position: relative;
+    font-size: 80px;
+    left: -15%;
+}
+
+.contact .contact-jumbotron a {
+    position: relative;
+    color: white;
+    font-size: 30px;
+    left: -10vw;
+}
+
+.contact .contact-jumbotron img {
+    position: absolute;
+    right: 0px;
+    top: 280px;
+}
+
+.contact .contact-container  h2{
+    margin-top: 30px;
+    font-size: 50px;
+    text-align: center;
+}
+
+#tele-family {
+    position: relative;
+    left: 50%;
+    transform: translate(-50%);
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 90%;
+}
+
+
+
+#tele-family .contact-img {
+    width: 250px;
+    height: 250px;
+    /* background-color: #fc5184e5; */
+    border-radius: 50%;
+    margin: 80px;
+    display: block;
+    overflow: hidden;
+    box-shadow: 3px 3px 15px 1px rgb(99, 97, 97);
+}
+
+#tele-family .contact-body a img {
+    width: 50px;
+}
+
+#tele-family .contact-body {
+    position: relative;
+    top: -10%;
+    left: 50%;
+    transform: translate(-50%);
+}
+
+#tele-family .contact-body .links {
+    position: relative;
+    left: 50%;
+    transform: translate(-15%);
+}
+
+#tele-family .contact-body h4 {
+    position: relative;
+    text-align: center;
+    
+}
+
+#tele-family .contact-img img {
+    position: relative;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    display: block;
+    width: 250px;
+    /* height: 300px; */
 }
             
         
